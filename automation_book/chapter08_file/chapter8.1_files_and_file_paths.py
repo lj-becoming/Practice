@@ -41,7 +41,7 @@ i = os.path.relpath(path_folder, b)
 print(i)
 
 ## 目录名称和基本名称
-j = os.path.join(b, "chapter8_file.py")
+j = os.path.join(b, "chapter8.1_files_and_file_paths.py")
 print(f"本文件的路径： {j}")
 print(f"基本名称： {os.path.basename(j)}")
 print(f"目录名称： {os.path.dirname(j)}")
@@ -49,7 +49,8 @@ print(f"目录名称和基本名称： {os.path.split(j)}")
 print(f"文件夹字符串列表： {j.split(os.path.sep)}")
 
 # 查看文件名和文件夹大小
-print(f"本文件的大小(byte)： {os.path.getsize(j)}")
+file_size = os.path.getsize(j)
+print(f"本文件的大小(byte)： {file_size}")
 print(f"当前文件所处目录的所有文件名： {os.listdir(b)}")
 
 total_size = 0
